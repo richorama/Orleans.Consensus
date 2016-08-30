@@ -121,6 +121,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Wire, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Wire.0.8.0\lib\net45\Wire.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actors\IMembershipProvider.cs" />
@@ -130,6 +134,7 @@
     <Compile Include="Log\ProtobufSerializer.cs" />
     <Compile Include="Log\SqliteLog.cs" />
     <Compile Include="Log\StreamLog.cs" />
+    <Compile Include="Log\WireSerializer.cs" />
     <Compile Include="Roles\ICandidateRole.cs" />
     <Compile Include="Roles\IFollowerRole.cs" />
     <Compile Include="Roles\ILeaderRole.cs" />

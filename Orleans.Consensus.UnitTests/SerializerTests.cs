@@ -35,6 +35,12 @@
             TestSerializer(serializer);
         }
 
+        [Fact]
+        public void WireCanSerializeAndDeserialize()
+        {
+            TestSerializer(new WireSerializer<LogEntry<TestOperation>>());
+        }
+
         // generic test for any serializer implementation
         void TestSerializer(ISerializer<LogEntry<TestOperation>> serializer)
         {
